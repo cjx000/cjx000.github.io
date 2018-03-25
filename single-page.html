@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hexa</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!--[if lt IE 9]>
+     <script src="js/html5shiv.js"></script>
+     <script src="js/respond.min.js"></script>
+<![endif]-->
+
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start plugins -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+<!----font-Awesome----->
+   	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!----font-Awesome----->
+</head>
+<body>
+<div class="header_bg" id="home"><!-- start header -->
+<div class="container">
+	<div class="row header text-center specials">
+		<div class="h_logo">
+			<a href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a>
+		</div>
+		<nav class="top-nav">
+			<ul class="top-nav nav_list">
+				<li><a href="portfolio.html">代表作品</a></li>
+				<li class="page-scroll"><a href="#about">关于我</a></li>
+				<li class="logo page-scroll"><a title="hexa" href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a></li>
+			    <li class="page-scroll"><a href="blog.html">博客</a></li>
+				<li class="page-scroll"><a href="#contact">联系方式&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+			</ul>
+			<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+		</nav>
+		<div class="clearfix"></div>
+	</div>
+</div>
+</div>
+<div class="blog"><!-- start main -->
+	<div class="container">
+		<div class="main row">
+			<h2 class="style">一个热爱前端的热血青年</h2>
+			<div class="details row">
+				<div class="col-md-6">
+					<img src="images/det_pic.jpg" alt="" class="img-responsive"/>
+				</div>
+				<div class="col-md-6">
+					<p class="para">“每个人不但生来就渴望受到别人的热爱，而且也希望能真正的成为可爱的人；或者说，他总希望成为自然而又合宜的热爱对象。他不但生来就唯恐被人憎恨，而且总担心自己成为可恨的人，或者说，他所担惊受怕的，就是不幸成为自然而又合宜的憎恨对象。他不但生来希望得到人们赞扬，而且希望成为值得赞扬的人，或者说，希望自己是那种虽然未得到人们的赞扬但确实是自然而又合宜的赞扬对象。他不仅唯恐被人谴责，而且唯恐成为该受谴责的人，或者说，唯恐成为那种虽然未被人们责备但确实是自然而又合宜的责备对象。”以上这段摘自亚当·斯密的《道德情操论》第三卷第二章，之所以选择了这么长的篇幅，是因为“值得赞美的喜爱”并不全然来自“对赞美的喜爱”，在诸多方面，他们还是互有区别和各自独立的，虽然这两个原则有些相似，虽然互有联系并且常常被混为一谈。只有把所有的前因后果联系起来，才能易于我们分得清楚吧。</p>
+					<p class="para"></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<p class="para">但是我必须向你解释，所有这些谴责快乐和赞美痛苦的错误观念是如何诞生的，我会给你一个关于这个系统的完整说明，并且阐明真理的伟大探索者的真正教导，人类的主人 - 建造者幸福。没有人拒绝，厌恶或者避免快乐本身，因为这是快乐，但是因为那些不知道如何追求快乐的人会理性地遇到非常痛苦的后果。再也没有任何人喜欢或追求或渴望自己获得痛苦，因为它是痛苦的，但是因为偶尔会出现痛苦和痛苦会使他获得某种极大乐趣的情况。举一个微不足道的例子，我们中的哪一个从事艰苦的体育锻炼，除了从中获得一些优势？但是谁有权挑选一个没有恼人后果的享乐的人，或是避免不产生任何愉悦的痛苦的人。
+
+</p>
+			<div class="read_more">
+				<a href="single-page.html">阅读更多</a>
+			</div>
+		</div>
+	</div>
+</div><!-- end main -->
+<div class="footer_bg" id="contact"><!-- start footer -->
+<div class="container">
+	<div class="row footer">
+		<div class="col-md-8 contact_left">
+			<h3>联系方式</h3>
+			<p>为了联系，请使用下面的联系方式：</h4>
+			<form method="post" action="contact-post.html">
+				<input type="text" value="姓名（必填）" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '姓名';}">
+				<input type="text" value="邮箱 (必填)" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '邮箱';}">
+				<input type="text" value="主题" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '主题';}">
+				<textarea onFocus="if(this.value == '你的留言....') this.value='';" onBlur="if(this.value == '') this.value='你的留言....;" >Your Message here....</textarea>
+				<span class="pull-right"><input type="submit" value="提交"></span>
+			</form>
+		</div>
+		<div class="col-md-4  contact_right">
+			
+			<ul class="list-unstyled address">
+				<li><i class="fa fa-map-marker"></i><span>北京市</span></li>
+				<li><i class="fa fa-phone"></i><span>17610005997</span></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:info@mycompany.com">1903523119@qq.com</a></li>
+			</ul>
+		</div>		
+	</div>
+</div>
+</div>
+<div class="footer1_bg"><!-- start footer1 -->
+	<div class="container">
+		<div class="row  footer">
+			<div class="copy text-center">
+				<p class="link"><span>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.huiyi8.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></span></p>
+				<a href="#home" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+				$(function() {
+				  $('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+				  });
+				});
+		</script>
+		<!---- start-smoth-scrolling---->		
+	</div>
+</div>
+
+</body>
+</html>
